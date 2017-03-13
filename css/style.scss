@@ -1,0 +1,59 @@
+// @import "authentication","login";
+
+$main-color:green;
+$main-background:red;
+
+@mixin gradient($color1: #F2166E, $color2: #FC97C0){
+    background: -webkit-linear-gradient(top, $color1, $color2);
+    background: -moz-linear-gradient(top, $color1, $color2);
+    background: -linear-gradient(top, $color1, $color2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+#container {
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+header{
+    figure{
+        height: 186px;
+    }
+    nav{
+        height: 50px;
+    }
+}
+section{
+    height: auto;
+}
+hr{
+    height: 10px;
+    background-color: $main-color;
+    margin-bottom: 0px;
+}
+footer{
+    height: 150px;
+    background-color:#EEEEEE;
+    p{
+        text-align: center;
+        color:$main-color;
+    }
+}
+#bg-title{
+    background: url("image/title-text.png");
+    height: 38px;
+}
+#title-text{
+    text-align: left;
+    line-height: 38px; 
+    margin-left: 10px;
+    color: white;
+}
+
+.textColor { //
+    color: red;        
+}

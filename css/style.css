@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+#container {
+  width: 1000px;
+  margin: 0 auto;
+  font-size: 14px; }
+
+header figure {
+  height: 186px; }
+header nav {
+  height: 50px; }
+
+section {
+  height: auto; }
+
+hr {
+  height: 10px;
+  background-color: green;
+  margin-bottom: 0px; }
+
+footer {
+  height: 150px;
+  background-color: #EEEEEE; }
+  footer p {
+    text-align: center;
+    color: green; }
+
+#bg-title {
+  background: url("image/title-text.png");
+  height: 38px; }
+
+#title-text {
+  text-align: left;
+  line-height: 38px;
+  margin-left: 10px;
+  color: white; }
+
+.textColor {
+  color: red; }
+
+/*# sourceMappingURL=style.css.map */
