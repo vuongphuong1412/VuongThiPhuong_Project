@@ -7,13 +7,25 @@
   margin: 0 auto;
   font-size: 14px; }
 
+#clear {
+  clear: both; }
+
 header figure {
   height: 186px; }
 header nav {
   height: 50px; }
 
-section {
-  height: auto; }
+section h6 {
+  color: white;
+  line-height: 38px;
+  margin-left: 0.5em; }
+section .contain {
+  border: gray solid;
+  margin-bottom: 10px;
+  padding: 10px; }
+
+.from {
+  margin: 10px; }
 
 hr {
   height: 10px;
@@ -26,16 +38,6 @@ footer {
   footer p {
     text-align: center;
     color: green; }
-
-#bg-title {
-  background: url("image/title-text.png");
-  height: 38px; }
-
-#title-text {
-  text-align: left;
-  line-height: 38px;
-  margin-left: 10px;
-  color: white; }
 
 .textColor {
   color: red; }

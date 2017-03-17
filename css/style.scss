@@ -30,7 +30,20 @@ header{
     }
 }
 section{
-    height: auto;
+    h6{
+        color: white;
+        line-height: 38px;
+        margin-left: 0.5em;
+    }
+   
+.contain{
+    border: gray solid;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+}
+.from{
+    margin: 10px;
 }
 hr{
     height: 10px;
@@ -44,16 +57,6 @@ footer{
         text-align: center;
         color:$main-color;
     }
-}
-#bg-title{
-    background: url("image/title-text.png");
-    height: 38px;
-}
-#title-text{
-    text-align: left;
-    line-height: 38px; 
-    margin-left: 10px;
-    color: white;
 }
 
 .textColor { //
