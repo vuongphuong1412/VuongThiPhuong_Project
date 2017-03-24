@@ -1,121 +1,27 @@
-<section>
-        <div class="row">
-            <!--contain-->
-            <div class="col-md-9">
-                <!--row1-->
-                <article>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <header>
-                                <div style="background-image: url('image/title-text.png'); height: 38px;"> 
-                                <h6>TIN TỨC - SỰ KIỆN</h6>
-                                </div>
-                            </header>
-                           <article>
-                               <a href="contain.html"> ​Tìm cách mở rộng thị trường trong nước và xuất khẩu</a>
-                               <div class="row" >
-                                <div class="col-md-3" ><img src="image/bando.jpg" style="width: 79px; height: 59px;"></div>
-                                <div class="col-md-9"><a href="contain.html">bạn tôi bảo: "Anh thấy phụ nữ khó hiểu lắm. Hơi tí là giận, hơi tí là ghen</a></div>
-                               </div>
-                               <div class="row" ng-repeat="news in newData">
-                                <div class="col-md-3" ><img src="{{news.imageUrl}}" style="width: 53px; height: 35px;"></div>
-                                <div class="col-md-9"><a href="contain.html">{{news.title}}</a></div>
-                               </div>
-                               
-                               <a href="#"> ​Xem tiếp >>></a>
-                           </article>
-                        </div>
-                        <div class="col-md-6">
-                            <header>
-                                <div style="background-image: url('image/title-text.png'); height: 38px;"> 
-                                <h6>TIN TỨC - SỰ KIỆN</h6>
-                                </div>
-                            </header>
-                           <article>
-                               <a href="contain.html"> ​Tìm cách mở rộng thị trường trong nước và xuất khẩu</a>
-                               <div class="row">
-                                <div class="col-md-3" ><img src="image/bando.jpg" style="width: 79px; height: 59px;"></div>
-                                <div class="col-md-9">bạn tôi bảo: "Anh thấy phụ nữ khó hiểu lắm. Hơi tí là giận, hơi tí là ghen</div>
-                               </div>
-                               <div class="row">
-                                <div class="col-md-3" ><img src="image/bando.jpg" style="width: 53px; height: 35px;"></div>
-                                <div class="col-md-9"><a href="contain.html">bạn tôi bảo: "Anh thấy phụ nữ khó hiểu lắm. Hơi tí là giận, hơi tí là ghen</a></div>
-                               </div>
-                               <div class="row">
-                                <div class="col-md-3" ><img src="image/bando.jpg" style="width: 53px; height: 35px;"></div>
-                                <div class="col-md-9"><a href="contain.html">bạn tôi bảo: "Anh thấy phụ nữ khó hiểu lắm. Hơi tí là giận, hơi tí là ghen</a></div>
-                               </div>
-                               <div class="row">
-                                <div class="col-md-3" ><img src="image/bando.jpg" style="width: 53px; height: 35px;"></div>
-                                <div class="col-md-9"><a href="contain.html">bạn tôi bảo: "Anh thấy phụ nữ khó hiểu lắm. Hơi tí là giận, hơi tí là ghen</a></div>
-                               </div>
-                               <a href="#"> ​Xem tiếp >>></a>
-                           </article>
-                        </div>
-                    </div>
-                </article>
 
-                <!--row2-->
-                <article>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <header>
-                                <div style="background-image: url('image/title-text.png'); height: 38px;"> 
-                                <h6>TIN TỨC - SỰ KIỆN</h6>
-                                </div>
-                            </header>
-                           <article>
-                               <a href="contain.html"> ​Tìm cách mở rộng thị trường trong nước và xuất khẩu</a>
-                               <div class="row">
-                                <div class="col-md-3" ><img src="image/bando.jpg" style="width: 79px; height: 59px;"></div>
-                                <div class="col-md-9">bạn tôi bảo: "Anh thấy phụ nữ khó hiểu lắm. Hơi tí là giận, hơi tí là ghen</div>
-                               </div>
-                               <div class="row">
-                                <div class="col-md-3" ><img src="image/bando.jpg" style="width: 53px; height: 35px;"></div>
-                                <div class="col-md-9"><a href="contain.html">bạn tôi bảo: "Anh thấy phụ nữ khó hiểu lắm. Hơi tí là giận, hơi tí là ghen</a></div>
-                               </div>
-                               <div class="row">
-                                <div class="col-md-3" ><img src="image/bando.jpg" style="width: 53px; height: 35px;"></div>
-                                <div class="col-md-9"><a href="contain.html">bạn tôi bảo: "Anh thấy phụ nữ khó hiểu lắm. Hơi tí là giận, hơi tí là ghen</a></div>
-                               </div>
-                               <div class="row">
-                                <div class="col-md-3" ><img src="image/bando.jpg" style="width: 53px; height: 35px;"></div>
-                                <div class="col-md-9"><a href="contain.html">bạn tôi bảo: "Anh thấy phụ nữ khó hiểu lắm. Hơi tí là giận, hơi tí là ghen</a></div>
-                               </div>
-                               <a href="#"> ​Xem tiếp >>></a>
-                           </article>
+<section >
+        <div class="row">
+            <div class="col-md-9" >
+                <div class="row">
+                    <div class="col-md-6 " ng-repeat="category in newData| orderBy:'_id' | unique: 'category'" >
+                        <div class="bg-title">
+                        <strong class="panel-title">{{category}}</strong>
                         </div>
-                        <div class="col-md-6">
-                            <header>
-                                <div style="background-image: url('image/title-text.png'); height: 38px;"> 
-                                <h6>TIN TỨC - SỰ KIỆN</h6>
-                                </div>
-                            </header>
-                           <article>
-                               <a href="contain.html"> ​Tìm cách mở rộng thị trường trong nước và xuất khẩu</a>
-                               <div class="row">
-                                <div class="col-md-3" ><img src="image/bando.jpg" style="width: 79px; height: 59px;"></div>
-                                <div class="col-md-9">bạn tôi bảo: "Anh thấy phụ nữ khó hiểu lắm. Hơi tí là giận, hơi tí là ghen</div>
-                               </div>
-                               <div class="row">
-                                <div class="col-md-3" ><img src="image/bando.jpg" style="width: 53px; height: 35px;"></div>
-                                <div class="col-md-9"><a href="contain.html">bạn tôi bảo: "Anh thấy phụ nữ khó hiểu lắm. Hơi tí là giận, hơi tí là ghen</a></div>
-                               </div>
-                               <div class="row">
-                                <div class="col-md-3" ><img src="image/bando.jpg" style="width: 53px; height: 35px;"></div>
-                                <div class="col-md-9"><a href="contain.html">bạn tôi bảo: "Anh thấy phụ nữ khó hiểu lắm. Hơi tí là giận, hơi tí là ghen</a></div>
-                               </div>
-                               <div class="row">
-                                <div class="col-md-3" ><img src="image/bando.jpg" style="width: 53px; height: 35px;"></div>
-                                <div class="col-md-9"><a href="contain.html">bạn tôi bảo: "Anh thấy phụ nữ khó hiểu lắm. Hơi tí là giận, hơi tí là ghen</a></div>
-                               </div>
-                               <a href="#"> ​Xem tiếp >>></a>
-                           </article>
+                        <div class="content" ng-repeat="new in newData| filter:category ">
+                            <p class="bg-text"><a href="#/news/{{new._id}}">{{new.title}}</a></p>
+                            <div class="row size-new">
+                                <div class="col-sm-3" ><img src="image/new.jpg" style="height: 90px; width: 90px"></div>
+                                <div class ="col-sm-9 "  >{{new.content |limitTo:150}}</div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="read-more">
+                            <strong>Xem tiếp >>></strong>
                         </div>
                     </div>
-                </article>
-                
+                </div>
             </div>
+            
 
             <!--sidebar-->
             <div class="col-md-3">

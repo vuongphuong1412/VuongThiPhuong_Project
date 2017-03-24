@@ -10,10 +10,29 @@
 #clear {
   clear: both; }
 
+.box-new {
+  border: 1px solid gray;
+  border-radius: 12px;
+  padding: 0px; }
+
+.bg-title {
+  background-image: url("../image/title-text.png");
+  margin-bottom: 1em; }
+  .bg-title strong {
+    color: white;
+    margin-left: 1em;
+    line-height: 38px; }
+
 header figure {
   height: 186px; }
 header nav {
-  height: 50px; }
+  height: 50px;
+  background-color: green !important;
+  margin-bottom: 1em; }
+  header nav a {
+    color: white !important; }
+  header nav button {
+    color: white !important; }
 
 section h6 {
   color: white;
@@ -22,29 +41,77 @@ section h6 {
 section article {
   margin-bottom: 10px;
   margin-top: 10px; }
-section .contain {
-  border: gray solid;
+  section article table {
+    border: green; }
+section p {
+  font-size: 15px; }
+
+.btn-primary {
+  background-color: green !important; }
+
+.size-content {
+  width: 500px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.size-title {
+  width: 110px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.contain {
   margin-bottom: 10px;
-  padding: 10px; }
+  padding: 10px;
+  border: 1px solid green;
+  border-radius: 12px; }
+
+.list-new {
+  overflow: scroll;
+  height: 300px; }
+
+.size-new {
+  margin-bottom: 30px; }
 
 .AddNew {
-  border: 2px solid #D3D3D3;
+  border: 2px solid green;
   border-radius: 12px;
-  padding: 10px; }
+  padding: 10px;
+  margin-top: 1em; }
+
+.bg-text {
+  font-size: 16px;
+  font-weight: bold; }
+  .bg-text a {
+    color: #0d300d; }
+
+.read-more {
+  color: #0d300d;
+  margin-bottom: 12px; }
 
 hr {
-  height: 10px;
+  height: 2px;
   background-color: green;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  margin-top: -1.9rem !important; }
 
 footer {
   height: 150px;
-  background-color: #EEEEEE; }
+  background-color: green;
+  margin-top: 12px; }
   footer p {
     text-align: center;
-    color: green; }
+    color: white;
+    line-height: 150px;
+    font-size: 50px; }
 
 .textColor {
   color: red; }
+
+.new {
+  display: inline-block;
+  padding: 0;
+  margin: 0; }
 
 /*# sourceMappingURL=style.css.map */

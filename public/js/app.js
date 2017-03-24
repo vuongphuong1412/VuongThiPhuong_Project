@@ -1,4 +1,5 @@
-var app = angular.module('app', ['ui.router']);
+var app = angular.module('app', ['ui.router','couchdb','customFilters']);
+
 
 app.run(function($rootScope) {
     var loggedInUser = localStorage.getItem('loggedInUser');
@@ -18,6 +19,18 @@ angular.element(document).ready(function () {
 app.config(function ($stateProvider) {
     $stateProvider.state('home', {
         url: '/',
-        templateUrl: 'parts/home.html'
+        templateUrl: 'parts/home.html',
+        controller: 'homeController'
     });
+    $stateProvider.state('detail', {
+        url: '/news/:docId',
+        templateUrl: 'parts/contain.html',
+        controller: 'detailController1'
+    });
+    $stateProvider.state('admin', {
+        url: '/admin',
+        templateUrl: 'parts/admin.html',
+        controller: 'adminController'
+    });
+     
 });
